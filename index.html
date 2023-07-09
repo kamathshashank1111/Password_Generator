@@ -8,22 +8,23 @@
 </head>
 <body>
     <div class="wrapper">
-        <h2>Password Generator</h2>
-    <div>
-        <input type="text" readonly placeholder="Password" data-input>
+        <h1>Password Generator</h1>
+    <div class="display-container">
+        <input type="text" readonly placeholder="Password" class="display" data-input>
         <button cpybtn>
         <span copy-message></span>
         <img src="copy.png" alt="copy" height="20" width="20" >
         </button>
         
     </div>
-    <div>
+    <div class="input-container" >
+    <div class="length-container">
         <p>Password Length</p>
         <p data-length>0</p>
     </div>    
 
     <div>
-        <input type="range" min="1" max="20" step="1" data-slider>
+        <input type="range" min="1" max="20" step="1" class="slider" data-slider Slider>
     </div>
     <div>
         <input type="checkbox" id="lowercase">
@@ -41,11 +42,12 @@
         <input type="checkbox" id="symbol">
         <label for="symbol">Includes Symbols</label>
     </div>
-    <div>
+    <div class="strength-container">
         <p>Strength</p>
         <div data-indicator></div>
+    </div >
+    <button class="generateButton" data-button>Generate Password</button>
     </div>
-    <button data-button>Generate Password</button>
     </div>
     <script src="script.js"></script>
 </body>
